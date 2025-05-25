@@ -9,11 +9,11 @@ import Blog from './pages/Blog';
 function App() {
   return (
     <Router>
-      <div className="min-h-screen flex flex-col bg-gray-50 w-full">
+      <div className="min-h-screen flex flex-col w-full">
         <div className="w-full">
           <Navbar />
         </div>
-        <main className="flex-grow w-full">
+        <main className="flex-grow w-full py-8">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
             <Routes>
               <Route path="/" element={<Home />} />

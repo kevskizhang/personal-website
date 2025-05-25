@@ -7,6 +7,15 @@
   flex-direction: column;
 }
 
+@theme {
+  --color-midnight: #0f172a;
+  --color-slate: #1e293b;
+  --color-indigo: #6366f1;
+  --color-text-primary: #f1f5f9;
+  --color-text-secondary: #94a3b8;
+}
+
+
 /* Remove any default margins and paddings */
 * {
   margin: 0;
