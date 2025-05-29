@@ -6,7 +6,7 @@ const Home = () => {
     <div className="w-full flex-1 flex items-center justify-center pt-4 pb-12">
       <div className="w-full max-w-4xl px-4 text-center">
         {/* Greeting */}
-        <h1 className="text-5xl md:text-6xl color-text-primary mb-8 font-family">
+        <h1 className="text-5xl md:text-6xl color-primary mb-8 font-family">
           <div className="inline-block">
             <span className="css-typing">
               hi, I'm Kevin
@@ -53,7 +53,7 @@ const Home = () => {
         </div>
 
         {/* Description */}
-        <div className="prose prose-lg color-text-secondary max-w-2xl mx-auto mb-12 font-family">
+        <div className="prose prose-lg text-primary max-w-2xl mx-auto mb-12 font-family">
           <p className="mb-6">
             I study Computer Science at the University of Illinois-Urbana Champaign, with an interest in software development and artificial intelligence.
           </p>

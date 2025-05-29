@@ -9,7 +9,7 @@
   line-height: 1.5;
   font-weight: 400;
 
-  color-scheme: light dark;
+  color-scheme: dark;
   /* color: rgba(255, 255, 255, 0.87); */
   /* background-color: #242424; */
   background-color: #0f131c;
@@ -20,6 +20,16 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+@theme {
+  --color-midnight: #0f172a;
+  --color-slate: #1e293b;
+  --color-indigo: #6366f1;
+  --color-primary: #f1f5f9;
+  --color-secondary: #94a3b8;
+  --color-sky: #93c5fd;
+}
+
 
 body {
   margin: 0;
