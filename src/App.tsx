@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Portfolio from './pages/Portfolio';
 import Blog from './pages/Blog';
+import Resume from './pages/Resume';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
               <Route path="/about" element={<About />} />
               <Route path="/portfolio" element={<Portfolio />} />
               <Route path="/blog" element={<Blog />} />
+              <Route path="/resume" element={<Resume />} />
             </Routes>
           </div>
         </main>

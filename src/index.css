@@ -80,7 +80,7 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-@media (prefers-color-scheme: light) {
+/* @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
     background-color: #ffffff;
@@ -91,7 +91,7 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-}
+} */
 
 .feathered-image {
     mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 20%, transparent 100%);
@@ -202,4 +202,45 @@ nav .text-link.active::before {
 @keyframes blink-caret {
   from, to { border-color: transparent }
   50% { border-color: #f1f5f9; }
+}
+
+.shimmer-border {
+  position: relative;
+}
+
+.shimmer-border::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px; /* Match Tailwind's border-width */
+  background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.7), transparent);
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+  background-size: 200% 100%;
+  animation: shimmer-sweep 2.5s linear infinite;
+  animation-play-state: paused;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.shimmer-border:hover::before {
+  opacity: 1;
+  animation-play-state: running;
+}
+
+@keyframes shimmer-sweep {
+  from {
+    background-position: 200% 0;
+  }
+  to {
+    background-position: -200% 0;
+  }
 }
