@@ -1,5 +1,5 @@
 import { useState, useMemo } from 'react';
-import { Link } from 'react-router-dom';
+
 
 const skills = [
   { name: 'JavaScript', category: 'languages' },
@@ -48,12 +48,14 @@ const About = () => {
             I'm also a big fan of poker, fantasy book series, video games, and the Chicago Bears.
           </p>
           <div className="flex justify-center my-8">
-            <Link
-              to="/resume"
+            <a
+              href="/resume/resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-link"
             >
               View Resume
-            </Link>
+            </a>
           </div>
 
           <h2 className="text-2xl font-family text-primary mt-8 mb-4">Skills</h2>
