@@ -49,7 +49,7 @@ const About = () => {
           </p>
           <div className="flex justify-center my-8">
             <a
-              href="/resume/resume.pdf"
+              href="/resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="text-link"
