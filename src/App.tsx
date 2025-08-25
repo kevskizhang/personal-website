@@ -6,6 +6,8 @@ import About from './pages/About';
 import Portfolio from './pages/Portfolio';
 import Blog from './pages/Blog';
 import Resume from './pages/Resume';
+import ProjectDetail from './pages/ProjectDetail';
+import ProjectUnavailable from './pages/ProjectUnavailable';
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
               <Route path="/" element={<Home />} />
               <Route path="/about" element={<About />} />
               <Route path="/portfolio" element={<Portfolio />} />
+              <Route path="/portfolio/:slug" element={<ProjectDetail />} />
+              <Route path="/portfolio/:slug/unavailable" element={<ProjectUnavailable />} />
               <Route path="/blog" element={<Blog />} />
               <Route path="/resume" element={<Resume />} />
             </Routes>

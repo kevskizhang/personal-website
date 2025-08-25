@@ -184,6 +184,48 @@ nav .text-link.active::before {
   width: 100%;
 }
 
+/* Back button specific styles - left pointing arrow */
+.text-link-back {
+  display: inline-flex;
+  align-items: center;
+  color: #f1f5f9;
+  font-size: 1rem;
+  font-weight: 500;
+  position: relative;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  padding: 0.5rem 0;
+}
+
+.text-link-back:hover {
+  color: #93c5fd;
+}
+
+.text-link-back::before {
+  content: '←';
+  margin-right: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.text-link-back:hover::before {
+  transform: translateX(-4px);
+}
+
+.text-link-back::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #93c5fd;
+  transition: width 0.3s ease;
+}
+
+.text-link-back:hover::after {
+  width: 100%;
+}
+
 .css-typing {
   display: inline-block;
   position: relative;
