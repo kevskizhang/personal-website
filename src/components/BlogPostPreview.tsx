@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-interface BlogPost {
+export interface BlogPost {
   id: number;
   title: string;
   excerpt: string;

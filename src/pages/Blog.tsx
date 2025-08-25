@@ -1,7 +1,7 @@
-import BlogPostPreview from '../components/BlogPostPreview';
+import BlogPostPreview, { type BlogPost } from '../components/BlogPostPreview';
 import { FaTwitter } from 'react-icons/fa';
 
-const posts = [
+const posts: BlogPost[] = [
   // Add blog posts here as needed
 ];
 
