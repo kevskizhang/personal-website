@@ -17,7 +17,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex items-center">
-            <Link to="/" className="text-xl font-bold text-gray-900 hover:text-gray-700 transition-colors">
+            <Link to="/" className="text-xl font-bold text-white hover:text-gray-300 transition-colors">
               KEVIN ZHANG
             </Link>
           </div>
@@ -40,7 +40,7 @@ const Navbar = () => {
           <div className="-mr-2 flex items-center sm:hidden">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500"
+              className="inline-flex items-center justify-center p-2 rounded-md text-gray-300 hover:text-white hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500"
               aria-expanded="false"
             >
               <span className="sr-only">Open main menu</span>
@@ -80,8 +80,8 @@ const Navbar = () => {
               to={link.path}
               className={`${
                 location.pathname === link.path
-                  ? 'bg-blue-50 border-blue-500 text-blue-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium'
-                  : 'border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium'
+                  ? 'bg-gray-800 border-blue-400 text-blue-400 block pl-3 pr-4 py-2 border-l-4 text-base font-medium'
+                  : 'border-transparent text-gray-300 hover:bg-gray-800 hover:border-gray-600 hover:text-white block pl-3 pr-4 py-2 border-l-4 text-base font-medium'
               }`}
               onClick={() => setIsMenuOpen(false)}
             >
