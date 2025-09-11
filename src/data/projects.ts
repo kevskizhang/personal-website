@@ -40,7 +40,7 @@ export const projectsData: Project[] = [
       'WIP'
     ],
     technologies: ['TypeScript', 'React', 'Vercel'],
-    githubUrl: '#',
+    githubUrl: 'https://github.com/kevskizhang/receiptreviewer',
     liveUrl: 'https://receiptreviewer.vercel.app/'
   },
   {
