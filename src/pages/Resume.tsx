@@ -3,7 +3,7 @@ const Resume = () => {
     <div className="w-full h-screen flex flex-col items-center">
       <div className="w-full max-w-4xl flex-grow">
         <iframe
-          src="public/resume/resume.pdf"
+          src="public/resume-2025.pdf"
           title="Kevin Zhang's Resume"
           className="w-full h-full border-none"
         />
